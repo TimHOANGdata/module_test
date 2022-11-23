@@ -119,5 +119,11 @@ class MathUtilsTest {
         assertEquals(expectedResult,mathUtils.isOdd(number));
     }
 
+    @DisplayName("Tester la puissance d'un nombre")
+    @Test
+    void TestPower() {
+        assertEquals(4,mathUtils.power(2, 2));
+        assertEquals(16,mathUtils.power(2, 4));
+    }
 }
 
